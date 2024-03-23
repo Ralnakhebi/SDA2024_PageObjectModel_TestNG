@@ -6,7 +6,7 @@ import sda.pages.EBayPage;
 import sda.utilities.ConfigReader;
 import sda.utilities.Driver;
 
-public class C08EbayTest {
+public class C08_EbayTest {
 
     @Test(dataProvider = "getData")
     public void test(String searchKey,int quantity) throws InterruptedException {

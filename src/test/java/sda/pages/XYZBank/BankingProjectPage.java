@@ -1,83 +1,151 @@
 package sda.pages.XYZBank;
 
-public class HomePage {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import sda.utilities.Driver;
 
+import java.util.List;
+
+public class BankingProjectPage {
+    public BankingProjectPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
     //Open 5 new  Accounts, deposit 100 USD and withdraw 100 USD from any account and delete all accounts you created.
- /*
-Given
-    Go to url https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
-When
-    Click on "Bank Manager Login" button
-And
-    Click on "Add Customer" button
-And
-    Fill inputs and click on "Add Customer" submit button
-And
-    Accept alert
-And
-    Add 4 more customers
-And
-    Click on "Open Account"  button
-And
-    Click on "Customer" dropdown
-And
-    Select customer name
-And
-    Click on "Currency" dropdown
-And
-    Select "Dollar"
-And
-    Click on "Process" button
-And
-    Accept alert
-And
-    Open 4 more accounts
-And
-    Click on "Customers" button
-And
-    Count table row numbers
-Then
-    Assert that you created 5 customers
-When
-    Click on "Home" button
-And
-    Click on "Customer Login" button
-And
-    Click on "Your Name" dropdown
-And
-    Select the any name you created
-And
-    Click on "Login" button
-And
-    Click on "Deposit" button
-And
-    Type 100 into "Amount to be Deposited" input
-And
-    Click on "Deposit"(Submit) button
-Then
-    Assert that "Deposit Successful" is displayed
-And
-    Click on "Withdrawal" button
-And
-    Type 100 into "Amount to be Withdrawn" input
-And
-    Click on "Withdraw"(Submit) button
-Then
-    Assert that "Transaction  Successful" is displayed
-When
-    Click on "Logout" button
-And
-    Click on "Home" button
-And
-    Click on "Bank Manager Login" button
-And
-    Click on "Customers" button
-And
-    Click on each "Delete" button
-And
-    Count table row numbers
-Then
-    Assert that number of customers is 0
+    @FindBy (xpath = "//*[@ng-click='manager()']")
+    WebElement bankManagerLoginButton;
 
- */
+    @FindBy (xpath = "//*[@ng-class='btnClass1']")
+    WebElement addCustomerButton;
+    @FindBy (xpath = "//*[@ng-class='btnClass2']")
+    WebElement openAccountButton;
+    @FindBy (xpath = "//*[@ng-class='btnClass3']")
+    WebElement customersButton;
+
+
+    @FindBy (id = "userSelect")
+    WebElement customerDropDown;
+    @FindBy (id = "currency")
+    WebElement currencyDropDown;
+    @FindBy (xpath = "//*[@type='submit']")
+    WebElement processButton;
+
+    @FindBy (tagName = "tbody")
+    WebElement customerTable;
+
+    @FindBy (xpath = "//*[@ng-click='home()']")
+    WebElement homeButton;
+    @FindBy (xpath = "//*[@ng-click='customer()']")
+    WebElement customerLoginButton;
+
+    @FindBy (xpath = "//button[@type='submit']")
+    WebElement LoginButton;
+
+    @FindBy (xpath = "//*[@ng-class='btnClass2']")
+    WebElement deposit;
+    @FindBy (xpath = "//*[@ng-model='amount']")
+    WebElement depositField;
+    @FindBy (xpath = "//*[@type='submit']")
+    WebElement depositButton;
+
+    @FindBy (xpath = "//*[@ng-class='btnClass3']")
+    WebElement withdraw;
+    @FindBy (xpath = "//*[@ng-model='amount']")
+    WebElement withdrawField;
+    @FindBy (xpath = "//*[@type='submit']")
+    WebElement withdrawButton;
+
+    @FindBy (xpath = "//*[@ng-show='message']")
+    WebElement verifyMessage;
+    @FindBy (xpath = "//*[@ng-show='logout']")
+    WebElement logout;
+
+    @FindAll (@FindBy (xpath = "//*[@ng-click='deleteCust(cust)']"))
+    List<WebElement> deleteButtons;
+
+    public void clickBankManagerLoginButton(){
+        bankManagerLoginButton.click();
+    }
+    public void clickAddCustomerButton(){
+        addCustomerButton.click();
+    }
+    public void clickOpenAccountButton(){
+        openAccountButton.click();
+    }
+    public void clickCustomersButton(){
+        customersButton.click();
+    }
+
+
+    public void openAccount(String customer){
+        Select selectCustomer=new Select(customerDropDown);
+        selectCustomer.selectByVisibleText(customer);
+        Select selectCurrency=new Select(currencyDropDown);
+        selectCurrency.selectByValue("Dollar");
+        processButton.click();
+
+    }
+
+    public void verifyTheNumberOfNewCustomer(int numberOfNewCustomer){
+        List<WebElement> rows=customerTable.findElements(By.xpath(".//tr"));
+        int countRows=0;
+        //count the rows
+        for (WebElement row: rows){
+            countRows++;
+        }
+        // remove the default rows that will be existed Automatically
+        countRows= countRows-5;
+        Assert.assertEquals(countRows,numberOfNewCustomer);
+
+    }
+
+    public void Login(String customerName){
+        homeButton.click();
+        customerLoginButton.click();
+        Select selectCustomer=new Select(customerDropDown);
+        selectCustomer.selectByVisibleText(customerName);
+        LoginButton.click();
+    }
+
+    public void deposit(int depositAmount){
+        deposit.click();
+        depositField.sendKeys(""+depositAmount);
+        depositButton.click();
+        Assert.assertTrue(verifyMessage.isDisplayed());
+    }
+
+    public void withdraw(int withdrawAmount){
+        withdraw.click();
+        withdrawField.sendKeys(""+withdrawAmount);
+        withdrawButton.click();
+        Assert.assertTrue(verifyMessage.isDisplayed());
+    }
+    public void clickLogOutButton(){
+        logout.click();
+    }
+    public void clickHomeButton(){
+        homeButton.click();
+    }
+    public void deleteAllCustomer(){
+        clickLogOutButton();
+        clickHomeButton();
+        clickBankManagerLoginButton();
+        clickCustomersButton();
+        for (WebElement delete : deleteButtons){
+            delete.click();
+        }
+        List<WebElement> rows=customerTable.findElements(By.xpath(".//tr"));
+        int countRows=0;
+        //count the rows
+        for (WebElement row: rows){
+            countRows++;
+        }
+        Assert.assertEquals(countRows,0);
+    }
+
+
 }

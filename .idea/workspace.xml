@@ -5,19 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0a63842-c7a8-4231-9f0b-3262ae1df3e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/DhtmlgoodiesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/EBayPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/FacebookLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/SauceDemo/InventoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/SauceDemo/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/BankingProjectPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/CreateNewCustomerPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C01_POMInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C02_UseDriverClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C03_UseConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C04_UsePageObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C05_DhtmlgoodiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C06_FacebookNegativeLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C07_FindByFindBysFindAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C08_EbayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C09_BankingProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/utilities/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/sda/utilities/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2dwfXNOTiiFs02fvXuYETXdVjf4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,10 +59,210 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C03_UseConfigReader.ConfigReaderTest.executor": "Run",
+    "TestNG.C04_UsePageObjects.pageObjectTest.executor": "Run",
+    "TestNG.C05_DhtmlgoodiesTest.executor": "Run",
+    "TestNG.C05_DhtmlgoodiesTest.test (1).executor": "Run",
+    "TestNG.C05_DhtmlgoodiesTest.test.executor": "Run",
+    "TestNG.C06_FacebookNegativeLoginTest.executor": "Run",
+    "TestNG.C06_FacebookNegativeLoginTest.loginNegativeScenario (1).executor": "Run",
+    "TestNG.C06_FacebookNegativeLoginTest.loginNegativeScenario (2).executor": "Run",
+    "TestNG.C06_FacebookNegativeLoginTest.loginNegativeScenario.executor": "Run",
+    "TestNG.C08EbayTest (1).executor": "Run",
+    "TestNG.C08EbayTest (2).executor": "Run",
+    "TestNG.C08EbayTest (3).executor": "Run",
+    "TestNG.C08EbayTest.executor": "Run",
+    "TestNG.C08EbayTest.test (1).executor": "Run",
+    "TestNG.C08EbayTest.test.executor": "Run",
+    "TestNG.C09_BankingProjectTest (1).executor": "Run",
+    "TestNG.C09_BankingProjectTest (2).executor": "Run",
+    "TestNG.C09_BankingProjectTest (3).executor": "Run",
+    "TestNG.C09_BankingProjectTest.countTableRowNumbers.executor": "Run",
+    "TestNG.C09_BankingProjectTest.createNewCustomerTest.executor": "Run",
+    "TestNG.C09_BankingProjectTest.deposit.executor": "Run",
+    "TestNG.C09_BankingProjectTest.executor": "Run",
+    "TestNG.C09_BankingProjectTest.login.executor": "Run",
+    "TestNG.C09_BankingProjectTest.test.executor": "Run",
+    "TestNG.C09_BankingProjectTest.test2.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.C09_BankingProjectTest">
+    <configuration name="C08EbayTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C08EbayTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C08_EbayTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C08_EbayTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C08_EbayTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C08_EbayTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C08_EbayTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C08_EbayTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_BankingProjectTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C09_BankingProjectTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_BankingProjectTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C09_BankingProjectTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_BankingProjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C09_BankingProjectTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_BankingProjectTest.createNewCustomerTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C09_BankingProjectTest" />
+      <option name="METHOD_NAME" value="createNewCustomerTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C09_BankingProjectTest.deposit" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SDA2024_PageObjectModel_TestNG" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sda.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sda.tests" />
+      <option name="MAIN_CLASS_NAME" value="sda.tests.C09_BankingProjectTest" />
+      <option name="METHOD_NAME" value="deposit" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C09_BankingProjectTest" />
+        <item itemvalue="TestNG.C09_BankingProjectTest (2)" />
+        <item itemvalue="TestNG.C09_BankingProjectTest.deposit" />
+        <item itemvalue="TestNG.C09_BankingProjectTest (1)" />
+        <item itemvalue="TestNG.C09_BankingProjectTest.createNewCustomerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,5 +273,21 @@
       <updated>1710924102836</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sda/pages/DhtmlgoodiesPage.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/sda/tests/C09_BankingProjectTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
