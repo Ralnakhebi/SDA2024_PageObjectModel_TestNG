@@ -12,12 +12,14 @@ public class C09_BankingProjectTest {
 
 
     BankingProjectPage bankingProjectPage = new BankingProjectPage();
-    @Test(dataProvider = "getData")
-    public void createNewCustomerTest(String firstName, String lastName, String postCode){
+    @Test(priority = -1)
+    public void test1(){
         Driver.getDriver().get(ConfigReader.getProperty("bankingProjectUrl"));
         bankingProjectPage.clickBankManagerLoginButton();
         bankingProjectPage.clickAddCustomerButton();
-
+    }
+    @Test(dataProvider = "getData")
+    public void createNewCustomerTest(String firstName, String lastName, String postCode){
         CreateNewCustomerPage createNewCustomerPage=new CreateNewCustomerPage();
         createNewCustomerPage.createNewCustomer(firstName,lastName,postCode);
         Driver.getDriver().switchTo().alert().accept();

@@ -60,7 +60,9 @@ public class BankingProjectPage {
     WebElement withdrawButton;
 
     @FindBy (xpath = "//*[@ng-show='message']")
-    WebElement verifyMessage;
+    WebElement verifyDepositMessage;
+    @FindBy (xpath = "//*[@ng-show='message']")
+    WebElement verifyWithdrawMessage;
     @FindBy (xpath = "//*[@ng-show='logout']")
     WebElement logout;
 
@@ -115,14 +117,14 @@ public class BankingProjectPage {
         deposit.click();
         depositField.sendKeys(""+depositAmount);
         depositButton.click();
-        Assert.assertTrue(verifyMessage.isDisplayed());
+        Assert.assertTrue(verifyDepositMessage.isDisplayed());
     }
 
     public void withdraw(int withdrawAmount){
         withdraw.click();
         withdrawField.sendKeys(""+withdrawAmount);
         withdrawButton.click();
-        Assert.assertTrue(verifyMessage.isDisplayed());
+        Assert.assertTrue(verifyWithdrawMessage.isDisplayed());
     }
     public void clickLogOutButton(){
         logout.click();

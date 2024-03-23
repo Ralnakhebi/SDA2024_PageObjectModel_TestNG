@@ -5,32 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0a63842-c7a8-4231-9f0b-3262ae1df3e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/DhtmlgoodiesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/EBayPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/FacebookLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/SauceDemo/InventoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/SauceDemo/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/BankingProjectPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/CreateNewCustomerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C01_POMInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C02_UseDriverClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C03_UseConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C04_UsePageObjects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C05_DhtmlgoodiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C06_FacebookNegativeLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C07_FindByFindBysFindAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C08_EbayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C09_BankingProjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/utilities/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sda/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/BankingProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sda/pages/XYZBank/BankingProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sda/tests/C09_BankingProjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sda/tests/C09_BankingProjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +62,7 @@
     "TestNG.C09_BankingProjectTest.login.executor": "Run",
     "TestNG.C09_BankingProjectTest.test.executor": "Run",
     "TestNG.C09_BankingProjectTest.test2.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
